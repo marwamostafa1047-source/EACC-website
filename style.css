@@ -630,7 +630,7 @@ nav a:hover{
 }
 
 /* =========================
-   MOBILE IMAGE FIX
+   MOBILE - FULL IMAGES
 ========================= */
 
 @media (max-width: 768px){
@@ -638,13 +638,18 @@ nav a:hover{
     /* HERO - HOME */
     .hero{
         height:100vh;
-        background-size:cover;
-        background-position:center center;
+
+        background-size:contain;
+        background-position:center;
+        background-repeat:no-repeat;
+
+        background-color:#000;
     }
 
     /* ABOUT */
     .about-hero{
         height:100vh;
+        background:#000;
     }
 
     .about-slider{
@@ -655,8 +660,11 @@ nav a:hover{
     .about-slider img{
         width:100%;
         height:100%;
+
         object-fit:contain;
-        object-position:center center;
+        object-position:center;
+
+        background:#000;
     }
 
 }
