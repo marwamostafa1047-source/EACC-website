@@ -1,12 +1,24 @@
 window.addEventListener("load", () => {
+    
+/* =========================
+   INTRO - MAIN PAGE
+========================= */
 
-    /* =========================
-       INTRO - MAIN PAGE
-    ========================= */
+const intro = document.querySelector(".intro");
 
-    const intro = document.querySelector(".intro");
+if (intro) {
 
-    if (intro) {
+    const introShown = sessionStorage.getItem("introShown");
+
+    if (introShown) {
+
+        // لو رجعنا للرئيسية، نخفي الـ Intro فورًا
+        intro.style.display = "none";
+
+    } else {
+
+        // أول دخول للموقع فقط
+        sessionStorage.setItem("introShown", "true");
 
         const title = document.querySelector(".intro-title");
         const subtitle = document.querySelector(".intro-subtitle");
@@ -32,10 +44,8 @@ window.addEventListener("load", () => {
         setTimeout(() => {
             intro.style.display = "none";
         }, 5000);
-
     }
-
-
+}
     /* =========================
        ABOUT PAGE SLIDER
     ========================= */
