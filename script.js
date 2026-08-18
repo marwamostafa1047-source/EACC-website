@@ -58,7 +58,7 @@ window.addEventListener("load", () => {
 
             aboutSlides[currentSlide].classList.add("active");
 
-        }, 3000);
+        }, 2000);
 
     }
 
