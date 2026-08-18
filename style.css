@@ -699,3 +699,19 @@ nav a:hover{
     }
 
 }
+
+@media (max-width:768px){
+
+    .about-slider{
+        background:#fff !important;
+    }
+
+    .about-slider img{
+        background:#fff !important;
+    }
+
+    .about-overlay{
+        display:none !important;
+    }
+
+}
