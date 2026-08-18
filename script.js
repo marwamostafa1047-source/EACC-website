@@ -1,51 +1,61 @@
 window.addEventListener("load", () => {
-    
-/* =========================
-   INTRO - MAIN PAGE
-========================= */
 
-const intro = document.querySelector(".intro");
+    /* =========================
+       INTRO - MAIN PAGE
+    ========================= */
 
-if (intro) {
+    const intro = document.querySelector(".intro");
 
-    const introShown = sessionStorage.getItem("introShown");
+    if (intro) {
 
-    if (introShown) {
+        const skipIntro = new URLSearchParams(window.location.search).get("skipIntro");
 
-        // لو رجعنا للرئيسية، نخفي الـ Intro فورًا
-        intro.style.display = "none";
+        if (skipIntro === "true") {
 
-    } else {
-
-        // أول دخول للموقع فقط
-        sessionStorage.setItem("introShown", "true");
-
-        const title = document.querySelector(".intro-title");
-        const subtitle = document.querySelector(".intro-subtitle");
-
-        setTimeout(() => {
-            if (title) {
-                title.style.opacity = "1";
-                title.style.transform = "scale(1)";
-            }
-        }, 1800);
-
-        setTimeout(() => {
-            if (subtitle) {
-                subtitle.style.opacity = "1";
-                subtitle.style.transform = "scale(1)";
-            }
-        }, 2200);
-
-        setTimeout(() => {
-            intro.style.opacity = "0";
-        }, 4200);
-
-        setTimeout(() => {
             intro.style.display = "none";
-        }, 5000);
+
+        } else {
+
+            const introShown = sessionStorage.getItem("introShown");
+
+            if (introShown) {
+
+                intro.style.display = "none";
+
+            } else {
+
+                sessionStorage.setItem("introShown", "true");
+
+                const title = document.querySelector(".intro-title");
+                const subtitle = document.querySelector(".intro-subtitle");
+
+                setTimeout(() => {
+                    if (title) {
+                        title.style.opacity = "1";
+                        title.style.transform = "scale(1)";
+                    }
+                }, 1800);
+
+                setTimeout(() => {
+                    if (subtitle) {
+                        subtitle.style.opacity = "1";
+                        subtitle.style.transform = "scale(1)";
+                    }
+                }, 2200);
+
+                setTimeout(() => {
+                    intro.style.opacity = "0";
+                }, 4200);
+
+                setTimeout(() => {
+                    intro.style.display = "none";
+                }, 5000);
+
+            }
+        }
     }
-}
+
+
     /* =========================
        ABOUT PAGE SLIDER
     ========================= */
