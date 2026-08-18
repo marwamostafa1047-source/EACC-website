@@ -163,6 +163,11 @@ body{
 
 }
 
+.logo img{
+    width:120px;
+    height:auto;
+    display:block;
+}
 
 .logo:hover{
 
