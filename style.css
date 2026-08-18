@@ -643,13 +643,13 @@ nav a:hover{
         background-position:center;
         background-repeat:no-repeat;
 
-        background-color:#000;
+        background-color:#fff;
     }
 
     /* ABOUT */
     .about-hero{
         height:100vh;
-        background:#000;
+        background:#fff;
     }
 
     .about-slider{
@@ -664,7 +664,7 @@ nav a:hover{
         object-fit:contain;
         object-position:center;
 
-        background:#000;
+        background:#fff;
     }
 
 }
