@@ -302,27 +302,19 @@ nav a:hover{
 
 
 .hero{
-
     height:100vh;
-
     position:relative;
-
     background:
     linear-gradient(rgba(0,0,0,.30),rgba(0,0,0,.30)),
-    url("../assets/hero.png");
-
+    url("../hero.png"); /* تعديل مسار الصورة ليقرأ hero.png مباشرة من المجلد الرئيسي */
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
-
     display:flex;
     justify-content:center;
     align-items:center;
-
     text-align:center;
-
     padding:100px 20px 0;
-
 }
 
 /* Glass Content */
