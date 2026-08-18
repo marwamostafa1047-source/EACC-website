@@ -702,6 +702,12 @@ nav a:hover{
 
 @media (max-width:768px){
 
+    /* HERO */
+    .hero{
+        background-color:#fff !important;
+    }
+
+    /* ABOUT */
     .about-slider{
         background:#fff !important;
     }
