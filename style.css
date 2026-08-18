@@ -605,3 +605,26 @@ nav a:hover{
 
     letter-spacing:1px;
 }
+.back-home{
+    position:fixed;
+    top:30px;
+    right:30px;
+    z-index:9999;
+
+    background:#0066FF;
+    color:#fff;
+
+    text-decoration:none;
+
+    padding:12px 25px;
+    border-radius:30px;
+
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.back-home:hover{
+    background:#0B3D91;
+    transform:translateY(-3px);
+}
