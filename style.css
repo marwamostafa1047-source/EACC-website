@@ -628,3 +628,35 @@ nav a:hover{
     background:#0B3D91;
     transform:translateY(-3px);
 }
+
+/* =========================
+   MOBILE IMAGE FIX
+========================= */
+
+@media (max-width: 768px){
+
+    /* HERO - HOME */
+    .hero{
+        height:100vh;
+        background-size:cover;
+        background-position:center center;
+    }
+
+    /* ABOUT */
+    .about-hero{
+        height:100vh;
+    }
+
+    .about-slider{
+        width:100%;
+        height:100%;
+    }
+
+    .about-slider img{
+        width:100%;
+        height:100%;
+        object-fit:contain;
+        object-position:center center;
+    }
+
+}
