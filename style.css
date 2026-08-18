@@ -668,3 +668,34 @@ nav a:hover{
     }
 
 }
+
+@media (max-width: 768px){
+
+    /* HERO */
+    .hero{
+        background-color:#fff;
+
+        background-image:
+        linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0)),
+        url("hero.png");
+
+        background-size:contain;
+        background-position:center;
+        background-repeat:no-repeat;
+    }
+
+    /* ABOUT */
+    .about-hero{
+        background:#fff;
+    }
+
+    .about-slider img{
+        object-fit:contain;
+        background:#fff;
+    }
+
+    .about-overlay{
+        background:rgba(0,0,0,0);
+    }
+
+}
