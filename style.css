@@ -511,7 +511,8 @@ nav a:hover{
 
     }
 }
- /* =========================
+
+/* =========================
    ABOUT PAGE - HERO
 ========================= */
 
@@ -528,6 +529,7 @@ nav a:hover{
     inset:0;
     width:100%;
     height:100%;
+    overflow:hidden;
 }
 
 .about-slider img{
@@ -541,10 +543,17 @@ nav a:hover{
     object-position:center;
 
     opacity:0;
+
+    transform:scale(1);
+
+    transition:
+        opacity 1s ease,
+        transform 3s ease;
 }
 
 .about-slider img.active{
     opacity:1;
+    transform:scale(1.03);
 }
 
 .about-overlay{
@@ -595,27 +604,4 @@ nav a:hover{
     font-weight:400;
 
     letter-spacing:1px;
-}
-.about-slider img{
-    position:absolute;
-    inset:0;
-
-    width:100%;
-    height:100%;
-
-    object-fit:cover;
-    object-position:center;
-
-    opacity:0;
-
-    transform:scale(1);
-
-    transition:
-        opacity 1s ease,
-        transform 3s ease;
-}
-
-.about-slider img.active{
-    opacity:1;
-    transform:scale(1.03);
 }
