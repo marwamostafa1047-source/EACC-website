@@ -157,6 +157,7 @@ body{
     width:100px;
     height:auto;
     display:block;
+   filter:brightness(0) invert(1);
 }
 
 .logo:hover img{
